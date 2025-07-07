@@ -240,7 +240,7 @@ document.querySelector(".close-notification").addEventListener("click", hideNoti
 // Load Google Maps
 function loadMap() {
     const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDPzfzPe9p8REyDmNi7dVu6jvflrDzAeUA&libraries=places&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key={API_KEY}&libraries=places&callback=initMap`;
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);
