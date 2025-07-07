@@ -39,17 +39,8 @@ with your key.
 
 3️⃣ Open index.html in your browser.
 
-**📂 Project Structure**
-fedra/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── fedra(1).png/
-│   └── logo
-
 **🧑‍💻 Contributing**
+
 Pull requests are welcome! Feel free to open an issue or submit a PR to improve functionality, fix bugs, or enhance the UI.
 
 **🙏 Acknowledgements**
