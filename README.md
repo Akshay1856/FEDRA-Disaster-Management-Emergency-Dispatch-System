@@ -31,7 +31,7 @@ It leverages HTML5, CSS3, and Vanilla JavaScript, along with the Google Maps API
 1️⃣ Clone this repository:
   - git clone https://github.com/your-username/fedra.git
   - cd fedra
-  - 
+    
 2️⃣ Add your Google Maps API Key:
 Edit the index.html file and replace 'YOUR_API_KEY':
   - <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
