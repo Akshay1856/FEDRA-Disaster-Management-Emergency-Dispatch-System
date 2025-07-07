@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISASTER REPORTING & EMERGENCY DISPATCH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <img src="logo.png" 
+            alt="Federal Disaster Response Agency Logo" 
+            class="logo">
+            <h1>🚨 DISASTER REPORTING & EMERGENCY DISPATCH</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Form to Report a Disaster -->
+        <div class="report-section">
+            <h2>Report a Disaster</h2>
+            <form id="reportForm">
+                <label for="disasterType">Type of Disaster:</label>
+                <select id="disasterType" required>
+                    <option value="">-- Select --</option>
+                    <optgroup label="Natural Disasters">
+                        <option value="Earthquake">🌍 Earthquake</option>
+                        <option value="Flood">🌊 Flood</option>
+                        <option value="Wildfire">🔥 Wildfire</option>
+                        <option value="Hurricane">🌀 Hurricane</option>
+                        <option value="Tornado">🌪️ Tornado</option>
+                    </optgroup>
+                    <optgroup label="Human-Made Disasters">
+                        <option value="Industrial_Accident">🏭 Industrial Accident</option>
+                        <option value="Transport_Accident">🚂 Transport Accident</option>
+                        <option value="Terrorism">💣 Terrorism</option>
+                    </optgroup>
+                    <optgroup label="Health Emergencies">
+                        <option value="Disease_Outbreak">🦠 Disease Outbreak</option>
+                    </optgroup>
+                    <option value="Other">⚠️ Other</option>
+                </select>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Click on the map to select location" required readonly>
+                <div id="coordinates" class="coordinates">Lat/Lng: Not selected</div>
+
+                <label for="description">Description: (50 words)</label>
+                <textarea id="description" placeholder="Describe the situation" required></textarea>
+
+                <button type="submit">Report Disaster</button>
+            </form>
+        </div>
+
+        <!-- Google Map Display -->
+        <div id="map"></div>
+        
+        <!-- Floating Response Notification -->
+        <div id="responseNotification" class="response-notification">
+        <button class="close-notification">&times;</button>
+        <div id="responseContent"></div>
+        <div id="countdown" class="countdown"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
